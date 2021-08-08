@@ -1,53 +1,5 @@
-/* Contact Info homepage
-------------------------------------*/
+/*  global styles-------------*/
 
-.contact-list {
-    list-style-type: none;
-    padding: 0;
-}
-.contact-list a {
-    padding: 15px;
-    display: inline-block;
-}
-.contact-list {
-    display: flex;
-    justify-content: center;
-}
-
-a {
-    color: #343434;
-}
-a:hover {
-    text-decoration: none;
-}
-
-
-/*  homepage-------------*/
-
-.h-left {
-    padding-top: 4em;
-    padding-bottom: 4em;
-}
-.grid-3 {
-    padding-top: 4em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 85px;
- 
-}
-h2 {
-    padding-bottom: 1em;
-}
-
-.grid-3 h1 {
-    text-align: left;
-    line-height: 1.2;
-    border-bottom: 7px solid black;
-}
-
-.grid-3 {
-    padding-bottom: 2em;
-}
 body {
     color: #343434;
     width: 1000px;
@@ -72,6 +24,10 @@ h1 {
     border-bottom: 1px solid grey;
 }
 
+h2 {
+    padding-bottom: 1em;
+}
+
 h3 {
     margin: 0;
     text-align: center;
@@ -79,6 +35,56 @@ h3 {
     line-height: 2;
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
+}
+
+.h-left {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Contact Info homepage
+------------------------------------*/
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+.contact-list {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #343434;
+}
+a:hover {
+    text-decoration: none;
+}
+
+
+/*  to add to grid add 1 fr -------------*/
+
+.grid-3 {
+    padding-top: 4em;
+    padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 85px;
+ 
+}
+
+.grid-3 h1 {
+    text-align: left;
+    line-height: 1.2;
+    border-bottom: 7px solid black;
 }
 
 .image-portrait {
@@ -93,7 +99,7 @@ h3 {
     border-bottom: 100px solid white;
 }
 
-
+/*  - ubl specific-------------------------- */
 
 .quote {
     width: 800px;
@@ -110,7 +116,6 @@ h3 {
     border-top: 50px solid white;
 }
 
-/*  - ubl -------------------------- */
 
 .grid-4 {
     display: grid;
@@ -164,44 +169,63 @@ h3 {
     border: none;
 }
 
-/* Responsive
-------------------------------------*/
-@media screen and (min-width: 750px) {
-    header,
-    footer {
-        text-align: center;
-    }
-    .project-item img {
-        float: left;
-        margin-right: 20px;
-    }
+/* sticky header -----------*/
 
-    .job-item {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 20px;
-    }
-    .contact-list {
-        display: flex;
-        justify-content: center;
-    }
+.header {
+    padding: 10 px 16 px; 
+background : rgb(165, 164, 164,0.1);
+color: #343434;
+    width:1000 px;
 }
 
-@media screen and (max-width: 749px) {
-    h1 {
-        font-size: 75px;
-        line-height: 0.9;
-        margin-bottom: 20px;
+.header:hover {
+    background: rgb(165, 164, 164,0.6);
+    color: #343434;
+  }
+
+.header:hover h1 {
+     color: #343434;
+  }
+
+
+.header h1  {
+    padding: 0 ;
+    margin: 0;
+    border:none;
     }
-    h2 {
-        line-height: 1;
-    }
-    .contact-list a {
-        padding: 5px;
-    }
+
+.header a  {
+        padding: 0 ;
+        margin: 0;
+        text-decoration: none;
+        }
+
+.sticky {
+    position: fixed;
+    top:0;
+    width: 84.8%;
+
+        }
+.sticky a {
+  color: lightgray;
+        }
+
+.sticky + .body {
+        padding-top: 60px;
 }
 
-.img-hp {
-    width: 600px;
-    height: 500px;
+.menu {
+    margin: 0;
+    list-style-type: none;
+    padding: 100 px,0;
+    display: flex;
+
+  }
+
+.right  {
+       padding-left: 50%;
+    padding-right: 100px;
 }
+
+
+
