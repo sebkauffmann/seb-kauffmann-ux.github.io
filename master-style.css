@@ -1,0 +1,231 @@
+/*  global styles-------------*/
+
+body {
+    color: #343434;
+    width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 2em;
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+    line-height: 2;
+    border-bottom: 1px solid grey;
+}
+
+h2 {
+    padding-bottom: 1em;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    line-height: 2;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.h-left {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Contact Info homepage
+------------------------------------*/
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+.contact-list {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #343434;
+}
+a:hover {
+    text-decoration: none;
+}
+
+
+/*  to add to grid add 1 fr -------------*/
+
+.grid-3 {
+    padding-top: 4em;
+    padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 85px;
+ 
+}
+
+.grid-3 h1 {
+    text-align: left;
+    line-height: 1.2;
+    border-bottom: 7px solid black;
+}
+
+.image-portrait {
+    float: left;
+    margin-right: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    border-top: 100px solid white;
+    border-bottom: 100px solid white;
+}
+
+/*  - ubl specific-------------------------- */
+
+.quote {
+    width: 800px;
+    float: right;
+    font-family: Helvetica, sans-serif;
+    line-height: 1;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    margin-left: 8rem;
+}
+
+.clear {
+    clear: both;
+    border-top: 50px solid white;
+}
+
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 85px;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.grid-4 h1 {
+    text-align: left;
+    line-height: 1.2;
+    border-bottom: 7px solid black;
+}
+
+.sub {
+    line-height: 1;
+    border-bottom: 1px solid grey;
+}
+
+.image-solo {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.loop {
+    padding-top: 20em;
+    padding-bottom: 20em;
+}
+.block {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+/* grain-specific styling  ----------------------- */
+
+.h1-grain h1 {
+    font-style: italic;
+    color: #ffe66d;
+    margin: 0;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    border-bottom: 1px solid yellow;
+}
+
+.h-left h1 {
+    text-align: left;
+    border: none;
+}
+
+/* sticky header -----------*/
+
+.header {
+    padding: 10 px 16 px; 
+background : rgb(165, 164, 164,0.1);
+color: #343434;
+    width:1000 px;
+}
+
+.header:hover {
+    background: rgb(165, 164, 164,0.6);
+    color: #343434;
+  }
+
+.header:hover h1 {
+     color: #343434;
+  }
+
+
+.header h1  {
+    padding: 0 ;
+    margin: 0;
+    border:none;
+    }
+
+.header a  {
+        padding: 0 ;
+        margin: 0;
+        text-decoration: none;
+        }
+
+.sticky {
+    position: fixed;
+    top:0;
+    width: 84.8%;
+
+        }
+.sticky a {
+  color: lightgray;
+        }
+
+.sticky + .body {
+        padding-top: 60px;
+}
+
+.menu {
+    margin: 0;
+    list-style-type: none;
+    padding: 100 px,0;
+    display: flex;
+
+  }
+
+.right  {
+       padding-left: 50%;
+    padding-right: 100px;
+}
+
+
+

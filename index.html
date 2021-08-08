@@ -17,7 +17,7 @@
             <!-- Main content -->
 
             <!-- project -->
-
+         <div id= all>
             <h2>
                 By centering my research and design on the user, I make sure to
                 make the best product possible.
@@ -45,17 +45,19 @@
                     </a>
                 </div>
 
+            
                 <div>
-               
-                    <div class="h-left">
-                        <a href="project/cv.pdf"
-                            ><h1>Resume + Certificate</h1></a
-                        >
-                    </div>
+                    <a href="project/wordpress/wordpress.html">
+                        <img
+                            src="project/smallcar2.jpg"
+                            alt="7824.jpg"
+                        />
+                    </a>
                 </div>
                 <div>
                     <p><strong>Grain</strong></p>
                     <p>
+                        <br>
                         Grain is a photo application for smartphones aiming to
                         bring back the process of analog photography.
                     </p>
@@ -75,7 +77,30 @@
                         task of doing a redesign of the booking system.
                     </p>
                 </div>
+       
+                <div>
+                    <p>
+                        <strong>
+                          Wordpress site of Kauffmann Studio
+                        </strong>
+                    </p>
+                    
+                    <p>
+                        <br>
+                        This is the Wordpress site of my design projects.
+                    </p>
+                </div>
             </div>
+        </div>
+<!-- keep the script in here for the mobile response -->
+<script>
+
+    if (navigator.userAgent.match(/Mobile/)) {
+              document.getElementById('all').innerHTML = '<h2> Thank you for checking out my site. It is better viewed on a big screen as the website is not for mobile optimised. </h2>';
+    
+          } 
+    </script>
+
 
             <!-- Contact -->
 
@@ -96,6 +121,16 @@
                                 >Xing</a
                             >
                         </li>
+
+                        
+               
+                            <li>
+                                <a href="project/cv.pdf"
+                                    >Resume + Certificate</a>
+                            </li>
+
+                        
+
                         <li>
                             <a
                                 href="mailto:sebkauffmann@gmail.com"
