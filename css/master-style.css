@@ -170,15 +170,15 @@ a:hover {
     border: none;
 }
 
-/* biblio-specific styling  ----------------------- */
+/* biblio on the go -specific styling  ----------------------- */
 
 .h1-biblio h1 {
     font-style: italic;
-    color: #000000;
+    color:#000000;
     margin: 0;
     text-align: left;
     font-family: Helvetica, sans-serif ;
-    font-weight: 100;
+    font-weight: 400;
     border-bottom: 1px solid grey;
 }
 .h1-biblio h2 {
@@ -193,6 +193,16 @@ a:hover {
     
 }
 
+#bg {
+    background-color: white;
+    
+}
+
+
+
+/*  --- new code !! delete ? 
+
+
 /* box shadow -------
 .grid-4-b {
     display: grid;
@@ -201,12 +211,22 @@ a:hover {
     padding-top: 4em;
     padding-bottom: 4em;
 }
+-----------*/
+
+.grid-4-b {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 85px;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
 
 
 .grid-4-b img{
     box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
 }
------------*/
+
 
 .txt-center {
     
